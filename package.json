@@ -1,0 +1,24 @@
+{
+  "name": "my-gdax-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gdax": "^0.4.2",
+    "gdax-trading-toolkit": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "nodemon": "^1.14.7",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2"
+  }
+}
